@@ -11,6 +11,7 @@
 		05375C5D2BE53954005E5774 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05375C5C2BE53954005E5774 /* ContentView.swift */; };
 		05375C5F2BE53956005E5774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05375C5E2BE53956005E5774 /* Assets.xcassets */; };
 		05375C622BE53956005E5774 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05375C612BE53956005E5774 /* Preview Assets.xcassets */; };
+		79C7F6D82BE55DA900EC838B /* WhatToWearToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C7F6D72BE55DA900EC838B /* WhatToWearToday.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		05375C5C2BE53954005E5774 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		05375C5E2BE53956005E5774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05375C612BE53956005E5774 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79C7F6D72BE55DA900EC838B /* WhatToWearToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToWearToday.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				05375C5C2BE53954005E5774 /* ContentView.swift */,
 				05375C5E2BE53956005E5774 /* Assets.xcassets */,
 				05375C602BE53956005E5774 /* Preview Content */,
+				79C7F6D72BE55DA900EC838B /* WhatToWearToday.swift */,
 			);
 			path = BOB;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C7F6D82BE55DA900EC838B /* WhatToWearToday.swift in Sources */,
 				05375C5D2BE53954005E5774 /* ContentView.swift in Sources */,
 				05375C5B2BE53954005E5774 /* BOBApp.swift in Sources */,
 			);
@@ -272,7 +276,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BOB/Preview Content\"";
-				DEVELOPMENT_TEAM = 76Q8Z3R463;
+				DEVELOPMENT_TEAM = TCHHC7688M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -285,7 +289,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.beyzazengin.BOB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliosmanozturk.BOB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,7 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BOB/Preview Content\"";
-				DEVELOPMENT_TEAM = 76Q8Z3R463;
+				DEVELOPMENT_TEAM = TCHHC7688M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -314,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.beyzazengin.BOB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliosmanozturk.BOB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
