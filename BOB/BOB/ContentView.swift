@@ -9,18 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     let destinations: [AnyView] = [
-        AnyView(SecondView()),
+        AnyView(WhatToWearToday()),
         AnyView(ThirdView()),
         AnyView(EleventhView())
     ]
     
+    let destinationNames = ["Bugün ne giymeli", "ThirdView", "EleventhView"]
+    
     var body: some View {
         NavigationView {
             ScrollView {
+                Image
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
                     ForEach(destinations.indices, id: \.self) { index in
                         NavigationLink(destination: destinations[index]) {
-                            Text("Sayfa \(index + 1)")
+                            Text("\(destinationNames[index])")
                                 .padding()
                                 .frame(maxWidth: .infinity)
                                 .background(Color.blue)
@@ -31,7 +34,7 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            .navigationBarTitle("Ana Sayfa", displayMode: .inline)
+            .navigationBarTitle("Kütahya Dumlupınar Üniversitesi", displayMode: .inline)
         }
     }
 }
