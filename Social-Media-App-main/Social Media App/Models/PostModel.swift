@@ -15,6 +15,7 @@ struct Post: Decodable, Identifiable {
     var name: String
     var userUID: String
     var imageURL: String
+    var kategori: String
     
     init(data: [String: Any]) {
         self.id = data["id"] as? String ?? ""
@@ -23,5 +24,6 @@ struct Post: Decodable, Identifiable {
         self.name = data["name"] as? String ?? ""
         self.userUID = data["useruid"] as? String ?? ""
         self.imageURL = data["imageurl"] as? String ?? ""
+        self.kategori = data["kategori"] as? String ?? ""
     }
 }
