@@ -113,7 +113,7 @@ struct CommunitiesView: View {
                     }
                     
                     if dizi[3] == true {
-                        NavigationLink(destination: yukselenView()) {
+                        NavigationLink(destination: KariyerView()) {
                             VStack(alignment: .leading) {
                                 Image("kar")
                                     .resizable()
@@ -125,7 +125,7 @@ struct CommunitiesView: View {
                             }
                         }
                         
-                        NavigationLink(destination: SavunmaView()) {
+                        NavigationLink(destination: yukselenView()) {
                             VStack(alignment: .leading) {
                                 Image("yukselen")
                                     .resizable()
