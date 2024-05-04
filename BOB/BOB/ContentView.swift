@@ -19,7 +19,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                Image
+                Image("tacKapi")
+                    .resizable()
+                    .scaledToFill()
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
                     ForEach(destinations.indices, id: \.self) { index in
                         NavigationLink(destination: destinations[index]) {
