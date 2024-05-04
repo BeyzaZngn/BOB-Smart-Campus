@@ -32,7 +32,7 @@ struct CommunitiesView: View {
 
                 Form {
                     if dizi[0] == true {
-                        NavigationLink(destination: PostsView()) {
+                        NavigationLink(destination: BBTView()) {
                             VStack(alignment: .leading) {
                                 Image("bbt")
                                     .resizable()
@@ -41,7 +41,6 @@ struct CommunitiesView: View {
                                     .fontWeight(.semibold)
                                 Text("3-4-5 Mayıs")
                                 Text("09.00")
-                                Text("- BBT Hackathon & Teknoloji Festivali Nedir ?BBT Hackathon & Teknoloji Festivali, Kütahya Dumlupınar Üniversitesi Bilgisayar Bilişim Topluluğu tarafından düzenlenen bir etkinliktir. Bu hackathon mobil, web ve masaüstü teknolojilerine ilgi duyan katılımcıların bir araya gelerek belirli bir süre içinde projeler geliştirdiği bir maratondur. Bu sene ilkini düzenleyeceğimiz BBT Hackathon & Teknoloji Festivali etkinliğimiz (3-4-5 Mayıs) tarihlerinde gerçekleşecektir. Bu etkinliğimizde, takımlarıyla katılacak yarışmacıların 48 saat içerisinde ortaya konulan konu ile alakalı bir mobil, web ya da masüstü uygulama çıkarmalarını bekleyeceğiz. Jüri karşısına çıkacakuygulamalarda en iyi olan üç uygulamaya ödül verilecektir.")
                             }
                         }
                         
