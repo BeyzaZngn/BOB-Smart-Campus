@@ -71,9 +71,9 @@ struct CommunitiesView: View {
                             }
                         }
                         
-                        NavigationLink(destination: SavunmaView()) {
+                        NavigationLink(destination: FitView()) {
                             VStack(alignment: .leading) {
-                                Image("savunma")
+                                Image("fit")
                                     .resizable()
                                     .scaledToFit()
                                 Text("Fit Konuşmalar")
