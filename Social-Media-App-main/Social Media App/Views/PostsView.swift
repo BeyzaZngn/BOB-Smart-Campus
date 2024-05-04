@@ -14,6 +14,7 @@ struct PostComponent: View {
     @State private var profileImage: UIImage?
     @State private var isLoadingImage = false
     
+    
     var body: some View {
         VStack {
             Divider()
@@ -86,6 +87,7 @@ struct PostsView: View {
     @StateObject var postsViewModel = PostsViewModel()
     
     @State private var showSearchView = false
+    @State private var showAddPostView = false
     
     var body: some View {
         NavigationView {
@@ -114,6 +116,20 @@ struct PostsView: View {
             }
             .sheet(isPresented: $showSearchView) {
                 SearchView(postsViewModel: postsViewModel)
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showAddPostView.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                            .foregroundColor(.blue)
+                    }
+
+                }
+            }
+            .sheet(isPresented: $showAddPostView) {
+                AddPostView()
             }
         }
     }
