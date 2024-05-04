@@ -86,9 +86,9 @@ struct CommunitiesView: View {
                     }
                     
                     if dizi[2] == true {
-                        NavigationLink(destination: TirmanisView()) {
+                        NavigationLink(destination: fotoView()) {
                             VStack(alignment: .leading) {
-                                Image("dpu-tirmanis")
+                                Image("foto")
                                     .resizable()
                                     .scaledToFit()
                                 Text("Temel Fotoğraf Eğitimi")
@@ -98,9 +98,9 @@ struct CommunitiesView: View {
                             }
                         }
                         
-                        NavigationLink(destination: SavunmaView()) {
+                        NavigationLink(destination: AizView()) {
                             VStack(alignment: .leading) {
-                                Image("savunma")
+                                Image("aiz")
                                     .resizable()
                                     .scaledToFit()
                                 Text("Aizanoi Antik Kenti Gezisi")
@@ -113,9 +113,9 @@ struct CommunitiesView: View {
                     }
                     
                     if dizi[3] == true {
-                        NavigationLink(destination: TirmanisView()) {
+                        NavigationLink(destination: yukselenView()) {
                             VStack(alignment: .leading) {
-                                Image("dpu-tirmanis")
+                                Image("kar")
                                     .resizable()
                                     .scaledToFit()
                                 Text("Dumlupınar Finans ve Kariyer Zirvesi")

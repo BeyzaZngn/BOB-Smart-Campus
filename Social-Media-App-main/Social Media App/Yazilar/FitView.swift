@@ -24,5 +24,5 @@ struct FitView: View {
 }
 
 #Preview {
-    TirmanisView()
+    FitView()
 }

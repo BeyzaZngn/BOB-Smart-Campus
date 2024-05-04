@@ -13,6 +13,8 @@
 		05544D2D2BE5F88B0018B0A8 /* TirmanisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D2C2BE5F88B0018B0A8 /* TirmanisView.swift */; };
 		05544D2F2BE60C180018B0A8 /* yukselenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D2E2BE60C180018B0A8 /* yukselenView.swift */; };
 		05544D312BE60C260018B0A8 /* FitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D302BE60C260018B0A8 /* FitView.swift */; };
+		05544D332BE62DA10018B0A8 /* fotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D322BE62DA10018B0A8 /* fotoView.swift */; };
+		05544D352BE62E940018B0A8 /* AizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D342BE62E940018B0A8 /* AizView.swift */; };
 		79F8A88B2BE5A8FE00408487 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79F8A88A2BE5A8FE00408487 /* GoogleService-Info.plist */; };
 		79F8A88D2BE5ABCB00408487 /* CommunitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */; };
 		FA14EB7429F450F800FA21B5 /* Social_Media_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14EB7329F450F800FA21B5 /* Social_Media_AppApp.swift */; };
@@ -45,6 +47,8 @@
 		05544D2C2BE5F88B0018B0A8 /* TirmanisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TirmanisView.swift; sourceTree = "<group>"; };
 		05544D2E2BE60C180018B0A8 /* yukselenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yukselenView.swift; sourceTree = "<group>"; };
 		05544D302BE60C260018B0A8 /* FitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitView.swift; sourceTree = "<group>"; };
+		05544D322BE62DA10018B0A8 /* fotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fotoView.swift; sourceTree = "<group>"; };
+		05544D342BE62E940018B0A8 /* AizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AizView.swift; sourceTree = "<group>"; };
 		79F8A88A2BE5A8FE00408487 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesView.swift; sourceTree = "<group>"; };
 		FA14EB7029F450F800FA21B5 /* Social Media App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Media App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +96,8 @@
 				05544D2C2BE5F88B0018B0A8 /* TirmanisView.swift */,
 				05544D2E2BE60C180018B0A8 /* yukselenView.swift */,
 				05544D302BE60C260018B0A8 /* FitView.swift */,
+				05544D322BE62DA10018B0A8 /* fotoView.swift */,
+				05544D342BE62E940018B0A8 /* AizView.swift */,
 			);
 			path = Yazilar;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 			files = (
 				FA14EBFE29F4C6C200FA21B5 /* ProfileView.swift in Sources */,
 				FA14EC0A29F557A800FA21B5 /* PostModel.swift in Sources */,
+				05544D352BE62E940018B0A8 /* AizView.swift in Sources */,
 				FA14EC0429F4CBC300FA21B5 /* AddPostView.swift in Sources */,
 				FA14EBFC29F4C6B200FA21B5 /* PostsView.swift in Sources */,
 				05544D2F2BE60C180018B0A8 /* yukselenView.swift in Sources */,
@@ -271,6 +278,7 @@
 				05544D292BE5F4CD0018B0A8 /* SavunmaView.swift in Sources */,
 				FA14EBC229F4779B00FA21B5 /* FirebaseManager.swift in Sources */,
 				FA14EB7629F450F800FA21B5 /* MainView.swift in Sources */,
+				05544D332BE62DA10018B0A8 /* fotoView.swift in Sources */,
 				79F8A88D2BE5ABCB00408487 /* CommunitiesView.swift in Sources */,
 				05544D2B2BE5F7F30018B0A8 /* KariyerView.swift in Sources */,
 				FA14EB7429F450F800FA21B5 /* Social_Media_AppApp.swift in Sources */,
