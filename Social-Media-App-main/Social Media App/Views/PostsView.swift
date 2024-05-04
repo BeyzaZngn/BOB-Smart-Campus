@@ -15,13 +15,14 @@ struct PostComponent: View {
     @State private var isLoadingImage = false
     
     let kategoriler = ["Kayıp İlanı", "Alım - Satım İlanı"]
+    @State var dizi = [false, false]
     
     var body: some View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
                     ForEach(kategoriler.indices, id: \.self) { index in
-                        Toggle("\(categories[index])", isOn: $dizi[index])
+                        Toggle("\(kategoriler[index])", isOn: $dizi[index])
                             .frame(width: 150)
                             .toggleStyle(.button)
                             .frame(width: 150)
