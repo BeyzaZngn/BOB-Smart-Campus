@@ -1,10 +1,3 @@
-//
-//  PostsView.swift
-//  Social Media App
-//
-//  Created by alex on 4/22/23.
-//
-
 import SwiftUI
 import Kingfisher
 
@@ -14,25 +7,10 @@ struct PostComponent: View {
     @State private var profileImage: UIImage?
     @State private var isLoadingImage = false
     
-    let kategoriler = ["Kayıp İlanı", "Alım - Satım İlanı"]
-    @State var dizi = [false, false]
+    
     
     var body: some View {
         VStack {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 10) {
-                    ForEach(kategoriler.indices, id: \.self) { index in
-                        Toggle("\(kategoriler[index])", isOn: $dizi[index])
-                            .frame(width: 150)
-                            .toggleStyle(.button)
-                            .frame(width: 150)
-                            .font(.headline)
-                            .background(Material.regularMaterial)
-                            .cornerRadius(8)
-                    }
-                }
-                .padding(.horizontal)
-            }
             Divider()
                 .padding(.horizontal)
             
@@ -106,9 +84,25 @@ struct PostsView: View {
     @State private var showSearchView = false
     @State private var showAddPostView = false
     
+    let kategoriler = ["Kayıp İlanı", "Alım - Satım İlanı"]
+    @State var dizi = [false, false]
+    
     var body: some View {
         NavigationView {
             VStack {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        ForEach(kategoriler.indices, id: \.self) { index in
+                            Toggle("\(kategoriler[index])", isOn: $dizi[index])
+                                .background(Material.regularMaterial)
+                                .toggleStyle(.button)
+                                .font(.headline)
+                                .frame(width: .infinity, height: 50)
+                                .cornerRadius(8)
+                        }
+                    }
+                    .padding(.horizontal)
+                }
                 ScrollView {
                     ForEach(postsViewModel.posts) { post in
                         PostComponent(post: post)
@@ -120,7 +114,7 @@ struct PostsView: View {
                 postsViewModel.posts = [Post]()
                 postsViewModel.fetchAllPosts()
             }
-            .navigationTitle("Posts")
+            .navigationTitle("Gönderiler")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {

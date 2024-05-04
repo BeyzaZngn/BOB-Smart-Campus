@@ -1,10 +1,3 @@
-//
-//  CommunitiesView.swift
-//  Social Media App
-//
-//  Created by Ali Osman Öztürk on 4.05.2024.
-//
-
 import SwiftUI
 
 struct CommunitiesView: View {
@@ -19,11 +12,10 @@ struct CommunitiesView: View {
                     HStack(spacing: 10) {
                         ForEach(categories.indices, id: \.self) { index in
                             Toggle("\(categories[index])", isOn: $dizi[index])
-                                .frame(width: 150)
-                                .toggleStyle(.button)
-                                .frame(width: 150)
-                                .font(.headline)
                                 .background(Material.regularMaterial)
+                                .toggleStyle(.button)
+                                .font(.headline)
+                                .frame(width: .infinity, height: 50)
                                 .cornerRadius(8)
                         }
                     }
