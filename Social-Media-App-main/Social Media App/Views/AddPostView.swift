@@ -15,6 +15,9 @@ struct AddPostView: View {
     @State private var selectedImage: UIImage?
     @State private var isShowingImagePicker = false
     @State private var errorMessage = ""
+    @State private var selectedKategori = ""
+    
+    let kategoriler = ["Kayıp İlanı", "Alım - Satım İlanı"]
     
     var addPostViewModel = AddPostViewModel()
     
@@ -30,6 +33,11 @@ struct AddPostView: View {
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 10)
+            
+            Picker("Please choose a color", selection: $selectedKategori) {
+                ForEach(kategoriler, id: \.self) {
+                    Text($0)
+                }}
             
             Button {
                 isShowingImagePicker.toggle()
@@ -75,7 +83,7 @@ struct AddPostView: View {
                 
                 let name = email.components(separatedBy: "@").first ?? ""
                 
-                addPostViewModel.addPost(name: name, postTitle: postTitle, image: selectedImage, date: Date())
+                addPostViewModel.addPost(name: name, postTitle: postTitle, image: selectedImage, date: Date(), kategori: selectedKategori)
                 
                 dismiss()
             } label: {
