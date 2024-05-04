@@ -127,7 +127,7 @@ struct CommunitiesView: View {
                         
                         NavigationLink(destination: SavunmaView()) {
                             VStack(alignment: .leading) {
-                                Image("savunma")
+                                Image("yukselen")
                                     .resizable()
                                     .scaledToFit()
                                 Text("Yükselen Topuklar")
