@@ -105,8 +105,21 @@ struct PostsView: View {
                 }
                 ScrollView {
                     ForEach(postsViewModel.posts) { post in
-                        PostComponent(post: post)
-                            .padding(.bottom)
+                        if dizi[0] == true {
+                            if post.kategori == "Kayıp İlanı" {
+                                PostComponent(post: post)
+                                    .padding(.bottom)
+                            }
+                        }
+                        
+                        if dizi[1] == true {
+                            if post.kategori == "Alım - Satım İlanı" {
+                                PostComponent(post: post)
+                                    .padding(.bottom)
+                            }
+                        }
+                        
+                        
                     }
                 }
             }

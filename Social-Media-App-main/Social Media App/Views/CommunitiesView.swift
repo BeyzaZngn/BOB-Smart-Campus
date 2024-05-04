@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CommunitiesView: View {
-    @State var dizi = [false, false, false, false]
+    @State var dizi = [true, true, true, true]
 
     let categories = ["Mühendislik", "Spor", "Sanat", "Sosyal"]
 
