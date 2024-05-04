@@ -1,17 +1,11 @@
-//
-//  ContentView.swift
-//  QrDenemeKodu
-//
-//  Created by Beyza Zengin on 4.05.2024.
-//
-
 import SwiftUI
 import AVFoundation
 
 struct QRScannerView: View {
+    @Binding var scanCount: Int // Sayaç değerini bağlamak için Binding oluşturduk
+    
     @State private var isShowingScanner = false
     @State private var scannedCode: String?
-    @State private var scanCount = 0 // Eklediğimiz sayaç
     
     var body: some View {
         VStack {
@@ -26,12 +20,14 @@ struct QRScannerView: View {
                         .cornerRadius(10)
                 }
             } else {
-                ScannerView(scannedCode: $scannedCode, isShowingScanner: $isShowingScanner, scanCount: $scanCount) // Sayaç ekledik
+                ScannerView(scannedCode: $scannedCode, isShowingScanner: $isShowingScanner, scanCount: $scanCount)
                     .edgesIgnoringSafeArea(.all)
             }
             
             Text("Tarama Sayısı: \(scanCount)") // Sayaç değerini gösteren metin
                 .padding()
+            
+            CreditCardView(balance: scanCount) // Sayaç değerini CreditCardView'a geçiriyoruz
         }
     }
 }
@@ -39,7 +35,7 @@ struct QRScannerView: View {
 struct ScannerView: UIViewControllerRepresentable {
     @Binding var scannedCode: String?
     @Binding var isShowingScanner: Bool
-    @Binding var scanCount: Int // Sayaç
+    @Binding var scanCount: Int // Sayaç değerini bağlamak için Binding oluşturduk
     
     func makeUIViewController(context: Context) -> ScannerViewController {
         let scannerViewController = ScannerViewController()
