@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "k_12085037_WhatsApp-Image-2022-12-09-at-09.37.30.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

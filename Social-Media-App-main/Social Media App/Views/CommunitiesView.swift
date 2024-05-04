@@ -44,31 +44,105 @@ struct CommunitiesView: View {
                             }
                         }
                         
-                        NavigationLink(destination: AddPostView()) {
+                        NavigationLink(destination: SavunmaView()) {
                             VStack(alignment: .leading) {
-                                Image("bbt")
+                                Image("savunma")
                                     .resizable()
                                     .scaledToFit()
-                                Text("BBT Hackathon ve Teknoloji Festivali")
+                                Text("Savunma Sanayii Buluşması")
                                     .fontWeight(.semibold)
-                                Text("3-4-5 Mayıs")
-                                Text("09.00")
+                                Text("9 Aralık")
+                                Text("11.00")
+                            }
+                        }
+        
+                    }
+                    
+                    if dizi[1] == true {
+                        NavigationLink(destination: TirmanisView()) {
+                            VStack(alignment: .leading) {
+                                Image("dpu-tirmanis")
+                                    .resizable()
+                                    .scaledToFit()
+                                Text("29 Ekim 100. Yıl Anma Tırmanışı")
+                                    .fontWeight(.semibold)
+                                Text("29 Ekim")
+                                Text("09.45")
                             }
                         }
                         
-                        NavigationLink(destination: PostsView()) {
+                        NavigationLink(destination: SavunmaView()) {
                             VStack(alignment: .leading) {
-                                Image("bbt")
+                                Image("savunma")
                                     .resizable()
                                     .scaledToFit()
-                                Text("BBT Hackathon ve Teknoloji Festivali")
+                                Text("Fit Konuşmalar")
                                     .fontWeight(.semibold)
-                                Text("3-4-5 Mayıs")
+                                Text("6 Aralık")
+                                Text("11.00")
+                            }
+                        }
+        
+                    }
+                    
+                    if dizi[2] == true {
+                        NavigationLink(destination: TirmanisView()) {
+                            VStack(alignment: .leading) {
+                                Image("dpu-tirmanis")
+                                    .resizable()
+                                    .scaledToFit()
+                                Text("Temel Fotoğraf Eğitimi")
+                                    .fontWeight(.semibold)
+                                Text("21 Aralık")
+                                Text("13.00")
+                            }
+                        }
+                        
+                        NavigationLink(destination: SavunmaView()) {
+                            VStack(alignment: .leading) {
+                                Image("savunma")
+                                    .resizable()
+                                    .scaledToFit()
+                                Text("Aizanoi Antik Kenti Gezisi")
+                                    .fontWeight(.semibold)
+                                Text("22 Nisan")
                                 Text("09.00")
                             }
                         }
+        
                     }
+                    
+                    if dizi[3] == true {
+                        NavigationLink(destination: TirmanisView()) {
+                            VStack(alignment: .leading) {
+                                Image("dpu-tirmanis")
+                                    .resizable()
+                                    .scaledToFit()
+                                Text("Dumlupınar Finans ve Kariyer Zirvesi")
+                                    .fontWeight(.semibold)
+                                Text("28 Aralık")
+                                Text("11.00")
+                            }
+                        }
+                        
+                        NavigationLink(destination: SavunmaView()) {
+                            VStack(alignment: .leading) {
+                                Image("savunma")
+                                    .resizable()
+                                    .scaledToFit()
+                                Text("Yükselen Topuklar")
+                                    .fontWeight(.semibold)
+                                Text("4 Mart")
+                                Text("11.00")
+                            }
+                        }
+        
+                    }
+                    
                 }
+                
+                
+                
             }
         }
     }

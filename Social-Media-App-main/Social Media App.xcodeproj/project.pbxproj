@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		05544D272BE5EEFA0018B0A8 /* BBTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D262BE5EEFA0018B0A8 /* BBTView.swift */; };
+		05544D292BE5F4CD0018B0A8 /* SavunmaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D282BE5F4CD0018B0A8 /* SavunmaView.swift */; };
+		05544D2B2BE5F7F30018B0A8 /* KariyerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D2A2BE5F7F30018B0A8 /* KariyerView.swift */; };
+		05544D2D2BE5F88B0018B0A8 /* TirmanisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D2C2BE5F88B0018B0A8 /* TirmanisView.swift */; };
 		79F8A88B2BE5A8FE00408487 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79F8A88A2BE5A8FE00408487 /* GoogleService-Info.plist */; };
 		79F8A88D2BE5ABCB00408487 /* CommunitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */; };
 		FA14EB7429F450F800FA21B5 /* Social_Media_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14EB7329F450F800FA21B5 /* Social_Media_AppApp.swift */; };
@@ -35,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		05544D262BE5EEFA0018B0A8 /* BBTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBTView.swift; sourceTree = "<group>"; };
+		05544D282BE5F4CD0018B0A8 /* SavunmaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavunmaView.swift; sourceTree = "<group>"; };
+		05544D2A2BE5F7F30018B0A8 /* KariyerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KariyerView.swift; sourceTree = "<group>"; };
+		05544D2C2BE5F88B0018B0A8 /* TirmanisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TirmanisView.swift; sourceTree = "<group>"; };
 		79F8A88A2BE5A8FE00408487 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesView.swift; sourceTree = "<group>"; };
 		FA14EB7029F450F800FA21B5 /* Social Media App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Media App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				05544D262BE5EEFA0018B0A8 /* BBTView.swift */,
+				05544D282BE5F4CD0018B0A8 /* SavunmaView.swift */,
+				05544D2A2BE5F7F30018B0A8 /* KariyerView.swift */,
+				05544D2C2BE5F88B0018B0A8 /* TirmanisView.swift */,
 			);
 			path = Yazilar;
 			sourceTree = "<group>";
@@ -245,14 +254,17 @@
 				FA14EB8529F4513B00FA21B5 /* LoginView.swift in Sources */,
 				FA14EB8729F4538800FA21B5 /* ImagePicker.swift in Sources */,
 				FA3B2E0E29F58FDE00D32885 /* ProfileViewModel.swift in Sources */,
+				05544D2D2BE5F88B0018B0A8 /* TirmanisView.swift in Sources */,
 				FA14EBC429F4785400FA21B5 /* LoginViewModel.swift in Sources */,
 				FA14EC0629F4CBDD00FA21B5 /* AddPostViewModel.swift in Sources */,
 				FA3B2E0829F580A700D32885 /* SearchView.swift in Sources */,
 				FA14EC0829F5576C00FA21B5 /* PostsViewModel.swift in Sources */,
 				05544D272BE5EEFA0018B0A8 /* BBTView.swift in Sources */,
+				05544D292BE5F4CD0018B0A8 /* SavunmaView.swift in Sources */,
 				FA14EBC229F4779B00FA21B5 /* FirebaseManager.swift in Sources */,
 				FA14EB7629F450F800FA21B5 /* MainView.swift in Sources */,
 				79F8A88D2BE5ABCB00408487 /* CommunitiesView.swift in Sources */,
+				05544D2B2BE5F7F30018B0A8 /* KariyerView.swift in Sources */,
 				FA14EB7429F450F800FA21B5 /* Social_Media_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
