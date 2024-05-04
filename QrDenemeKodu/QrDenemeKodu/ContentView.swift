@@ -11,6 +11,7 @@ import AVFoundation
 struct QRScannerView: View {
     @State private var isShowingScanner = false
     @State private var scannedCode: String?
+    @State private var scanCount = 0 // Eklediğimiz sayaç
     
     var body: some View {
         VStack {
@@ -25,14 +26,12 @@ struct QRScannerView: View {
                         .cornerRadius(10)
                 }
             } else {
-                ScannerView(scannedCode: $scannedCode, isShowingScanner: $isShowingScanner)
+                ScannerView(scannedCode: $scannedCode, isShowingScanner: $isShowingScanner, scanCount: $scanCount) // Sayaç ekledik
                     .edgesIgnoringSafeArea(.all)
             }
             
-            if let scannedCode = scannedCode {
-                Text("Taranan Kod: \(scannedCode)")
-                    .padding()
-            }
+            Text("Tarama Sayısı: \(scanCount)") // Sayaç değerini gösteren metin
+                .padding()
         }
     }
 }
@@ -40,6 +39,7 @@ struct QRScannerView: View {
 struct ScannerView: UIViewControllerRepresentable {
     @Binding var scannedCode: String?
     @Binding var isShowingScanner: Bool
+    @Binding var scanCount: Int // Sayaç
     
     func makeUIViewController(context: Context) -> ScannerViewController {
         let scannerViewController = ScannerViewController()
@@ -63,6 +63,7 @@ struct ScannerView: UIViewControllerRepresentable {
         }
         
         func didFindCode(_ code: String) {
+            scannerView.scanCount += 1 // Sayaçı artır
             scannerView.scannedCode = code
             scannerView.isShowingScanner = false
         }
