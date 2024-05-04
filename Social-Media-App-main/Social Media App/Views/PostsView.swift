@@ -14,9 +14,24 @@ struct PostComponent: View {
     @State private var profileImage: UIImage?
     @State private var isLoadingImage = false
     
+    let kategoriler = ["Kayıp İlanı", "Alım - Satım İlanı"]
     
     var body: some View {
         VStack {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 10) {
+                    ForEach(kategoriler.indices, id: \.self) { index in
+                        Toggle("\(categories[index])", isOn: $dizi[index])
+                            .frame(width: 150)
+                            .toggleStyle(.button)
+                            .frame(width: 150)
+                            .font(.headline)
+                            .background(Material.regularMaterial)
+                            .cornerRadius(8)
+                    }
+                }
+                .padding(.horizontal)
+            }
             Divider()
                 .padding(.horizontal)
             
@@ -44,6 +59,7 @@ struct PostComponent: View {
                         )
                         .padding(.leading)
                 }
+                
                 
                 Text(post.name)
                     .padding(.vertical, 2)
