@@ -1,10 +1,3 @@
-//
-//  KariyerView.swift
-//  Social Media App
-//
-//  Created by Beyza Zengin on 4.05.2024.
-//
-
 import SwiftUI
 
 struct KariyerView: View {

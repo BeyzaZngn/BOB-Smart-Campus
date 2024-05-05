@@ -1,10 +1,3 @@
-//
-//  LoginView.swift
-//  Social Media App
-//
-//  Created by alex on 4/22/23.
-//
-
 import SwiftUI
 
 struct LoginView: View {
@@ -33,7 +26,7 @@ struct LoginView: View {
                     .foregroundColor(.white)
                 
                 VStack(spacing: 16) {
-                    Text(isLoginMode ? "Login" : "Create Username")
+                    Text(isLoginMode ? "Giriş Yap" : "Kullanıcı Oluştur")
                         .font(.largeTitle)
                         .bold()
                     
@@ -72,7 +65,7 @@ struct LoginView: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     
-                    SecureField("Password", text: $password)
+                    SecureField("Şifre", text: $password)
                         .autocapitalization(.none)
                         .bold()
                         .padding()
@@ -83,7 +76,7 @@ struct LoginView: View {
                     Button {
                         handleAction()
                     } label: {
-                        Text(isLoginMode ? "Login" : "Create Account")
+                        Text(isLoginMode ? "Giriş Yap" : "Hesap Oluştur")
                             .foregroundColor(.white)
                             .padding(10)
                             .frame(width: 300, height: 50)
@@ -93,11 +86,11 @@ struct LoginView: View {
                     }
                     
                     HStack {
-                        Text(isLoginMode ? "Don't have an account yet?" : "Have an account?")
+                        Text(isLoginMode ? "Hesabınız yok mu?" : "Hesabınız var mı?")
                         Button {
                             isLoginMode.toggle()
                         } label: {
-                            Text(isLoginMode ? "Create Account" : "Login")
+                            Text(isLoginMode ? "Hesap Oluştur" : "Giriş Yap")
                         }
 
                     }

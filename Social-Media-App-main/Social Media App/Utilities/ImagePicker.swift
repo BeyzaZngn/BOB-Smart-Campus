@@ -1,10 +1,3 @@
-//
-//  ImagePicker.swift
-//  Social Media App
-//
-//  Created by alex on 4/22/23.
-//
-
 import UIKit
 import SwiftUI
 

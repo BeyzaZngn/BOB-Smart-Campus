@@ -1,10 +1,3 @@
-//
-//  ProfileView.swift
-//  Social Media App
-//
-//  Created by alex on 4/22/23.
-//
-
 import SwiftUI
 import FirebaseAuth
 import FirebaseStorage

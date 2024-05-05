@@ -1,10 +1,3 @@
-//
-//  AddPostView.swift
-//  Social Media App
-//
-//  Created by alex on 4/22/23.
-//
-
 import SwiftUI
 import FirebaseAuth
 
@@ -27,7 +20,7 @@ struct AddPostView: View {
                 Image(systemName: "person.crop.circle.fill")
                     .font(.system(size: 40))
                     .foregroundColor(.blue)
-                TextField("Share your thoughts...", text: $postTitle)
+                TextField("Metninizi buraya giriniz...", text: $postTitle)
                     .padding(10)
                     .frame(maxWidth: .infinity)
             }
@@ -87,7 +80,7 @@ struct AddPostView: View {
                 
                 dismiss()
             } label: {
-                Text("Share")
+                Text("Paylaş")
                     .font(.title2)
                     .bold()
                     .foregroundColor(.white)

@@ -1,10 +1,3 @@
-//
-//  SearchView.swift
-//  Social Media App
-//
-//  Created by alex on 4/23/23.
-//
-
 import SwiftUI
 
 struct SearchView: View {
@@ -20,7 +13,7 @@ struct SearchView: View {
                             .foregroundColor(.gray)
                             .padding(.leading, 8)
                         
-                        TextField("Search", text: $text)
+                        TextField("Ara", text: $text)
                     }
                     .padding(.horizontal, 8)
                     .background(Color(.systemGray6))
@@ -31,7 +24,7 @@ struct SearchView: View {
                     Button {
                         text = ""
                     } label: {
-                        Text("Cancel")
+                        Text("Kapat")
                             .foregroundColor(.blue)
                     }
                     .padding(.trailing, 8)
