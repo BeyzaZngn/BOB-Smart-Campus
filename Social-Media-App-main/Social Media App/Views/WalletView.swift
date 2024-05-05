@@ -1,7 +1,18 @@
 import SwiftUI
+import CodeScanner
+
+struct Transaction: Identifiable {
+    var id = UUID()
+    var amount: Double
+    var description: String
+}
 
 struct WalletView: View {
-    var balance: Double = 255.90 // Sayaçtan alınan değeri tutacak değişken
+    @State private var transactions: [Transaction] = []
+    @State private var isPresentingScanner = false
+    @State private var scannedCode: String?
+    
+    @State var balance: Double = 255 // Sayaçtan alınan değeri tutacak değişken
     
     var body: some View {
         VStack {
@@ -10,7 +21,16 @@ struct WalletView: View {
                 payButton
                 recycleToEarnButton
             }
+            
+            List(transactions) { transaction in
+                Text("\(transaction.description): \(transaction.amount.formatted())")
+            }
         }
+    }
+    
+    private func addTransaction(amount: Double, description: String) {
+        let transaction = Transaction(amount: amount, description: description)
+        transactions.append(transaction)
     }
 }
 
@@ -58,25 +78,61 @@ extension WalletView {
     
     private var payButton: some View {
         Button {
-            
+            isPresentingScanner = true // QR kod tarayıcıyı aç
         } label: {
             Text("Ödeme Yap")
                 .font(.headline)
                 .frame(width: 110, height: 30)
         }
         .buttonStyle(.borderedProminent)
+        .sheet(isPresented: $isPresentingScanner) {
+            ScannerSheet(scannedCode: $scannedCode, balance: $balance, transactions: $transactions, currentBalance: $balance)
+        }
     }
     
     private var recycleToEarnButton: some View {
         Button {
-            
+            isPresentingScanner = true // QR kod tarayıcıyı aç
         } label: {
-            Image(systemName: "arrow.3.trianglepath")
+            Image(systemName: "turkishlirasign.arrow.circlepath")
             Text("Dönüştür ve Kazan")
                 .font(.headline)
                 .frame(width: .infinity, height: 30)
         }
         .buttonStyle(.borderedProminent)
+        .sheet(isPresented: $isPresentingScanner) {
+            ScannerSheet(scannedCode: $scannedCode, balance: $balance, transactions: $transactions, currentBalance: $balance)
+        }
+    }
+}
+
+struct ScannerSheet: View {
+    @Binding var scannedCode: String?
+    @Binding var balance: Double
+    @Binding var transactions: [Transaction] // Bu satırı ekleyin
+    @Environment(\.presentationMode) var presentationMode
+    @Binding var currentBalance: Double // Bu satırı ekleyin
+
+    
+    var body: some View {
+        CodeScannerView(codeTypes: [.qr], simulatedData: "Paul Hudson") { result in
+            switch result {
+            case .success(let scan):
+                if let scannedValue = Double(scan.string) {
+                    balance += scannedValue // QR kod okunan değeri bakiyeye ekle
+                    transactions.append(Transaction(amount: scannedValue, description: "QR kod okundu"))
+                } else {
+                    print("Hatalı QR kod.")
+                }
+            case .failure(let error):
+                print("QR kod okuma başarısız: \(error.localizedDescription)")
+            }
+            presentationMode.wrappedValue.dismiss() // Sheet'i kapat
+        }
+        .onDisappear {
+            // Clear the scanned code when the sheet is dismissed
+            scannedCode = nil
+        }
     }
 }
 

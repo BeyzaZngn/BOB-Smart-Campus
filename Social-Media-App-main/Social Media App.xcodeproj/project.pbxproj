@@ -16,6 +16,7 @@
 		05544D332BE62DA10018B0A8 /* fotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D322BE62DA10018B0A8 /* fotoView.swift */; };
 		05544D352BE62E940018B0A8 /* AizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D342BE62E940018B0A8 /* AizView.swift */; };
 		799560142BE7743E00A2FE11 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799560132BE7743E00A2FE11 /* WalletView.swift */; };
+		799560172BE7931000A2FE11 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 799560162BE7931000A2FE11 /* CodeScanner */; };
 		79F8A88B2BE5A8FE00408487 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79F8A88A2BE5A8FE00408487 /* GoogleService-Info.plist */; };
 		79F8A88D2BE5ABCB00408487 /* CommunitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */; };
 		FA14EB7429F450F800FA21B5 /* Social_Media_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14EB7329F450F800FA21B5 /* Social_Media_AppApp.swift */; };
@@ -81,6 +82,7 @@
 			files = (
 				FA14EBBA29F4769000FA21B5 /* FirebaseDatabaseSwift in Frameworks */,
 				FA14EBBE29F4769000FA21B5 /* FirebaseStorage in Frameworks */,
+				799560172BE7931000A2FE11 /* CodeScanner in Frameworks */,
 				FA14EBB829F4769000FA21B5 /* FirebaseAuth in Frameworks */,
 				FA14EBBC29F4769000FA21B5 /* FirebaseFirestore in Frameworks */,
 				FA3B2DFC29F56CEA00D32885 /* Kingfisher in Frameworks */,
@@ -204,6 +206,7 @@
 				FA14EBBB29F4769000FA21B5 /* FirebaseFirestore */,
 				FA14EBBD29F4769000FA21B5 /* FirebaseStorage */,
 				FA3B2DFB29F56CEA00D32885 /* Kingfisher */,
+				799560162BE7931000A2FE11 /* CodeScanner */,
 			);
 			productName = "Social Media App";
 			productReference = FA14EB7029F450F800FA21B5 /* Social Media App.app */;
@@ -236,6 +239,7 @@
 			packageReferences = (
 				FA14EBB629F4769000FA21B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				FA3B2DFA29F56CEA00D32885 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				799560152BE7931000A2FE11 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = FA14EB7129F450F800FA21B5 /* Products */;
 			projectDirPath = "";
@@ -417,10 +421,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Social Media App/Preview Content\"";
-				DEVELOPMENT_TEAM = 76Q8Z3R463;
+				DEVELOPMENT_TEAM = TCHHC7688M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Social-Media-App-Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "QR kod taramak için kamera izniniz isteniyor.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "QR kod taramak için kamera izniniz isteniyor.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -431,7 +437,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.beyzazengin.WeSplit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliosmanozturk.Kutuphane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -449,10 +455,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Social Media App/Preview Content\"";
-				DEVELOPMENT_TEAM = 76Q8Z3R463;
+				DEVELOPMENT_TEAM = TCHHC7688M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Social-Media-App-Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "QR kod taramak için kamera izniniz isteniyor.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "QR kod taramak için kamera izniniz isteniyor.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,7 +471,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.beyzazengin.WeSplit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliosmanozturk.Kutuphane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -496,6 +504,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		799560152BE7931000A2FE11 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
 		FA14EBB629F4769000FA21B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -515,6 +531,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		799560162BE7931000A2FE11 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 799560152BE7931000A2FE11 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
 		FA14EBB729F4769000FA21B5 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FA14EBB629F4769000FA21B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

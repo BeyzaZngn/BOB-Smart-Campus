@@ -25,10 +25,7 @@ struct QRScannerView: View {
             
             Text("Tarama Sayısı: \(scanCount)") // Sayaç değerini gösteren metin
                 .padding()
-            
-            // Bakiye gösterimi
-            CreditCardView(balance: scanCount)
-            
+        
         }
     }
 }

@@ -8,6 +8,11 @@ struct MainView: View {
             LoginView(loginViewModel: loginViewModel)
         } else {
             TabView {
+                WalletView()
+                    .tabItem {
+                        Image(systemName: "turkishlirasign.square")
+                        Text("Cüzdan")
+                    }
                 CommunitiesView()
                     .tabItem {
                         Image(systemName: "person.3.fill")
