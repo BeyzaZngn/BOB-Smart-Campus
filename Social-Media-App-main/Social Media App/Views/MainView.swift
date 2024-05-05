@@ -18,6 +18,11 @@ struct MainView: View {
                         Image(systemName: "person.3.fill")
                         Text("Topluluk")
                     }
+                DolulukView()
+                    .tabItem {
+                        Image(systemName: "person.fill.questionmark")
+                        Text("Doluluk")
+                    }
                 PostsView()
                     .tabItem {
                         Image(systemName: "rectangle.portrait.on.rectangle.portrait.angled")

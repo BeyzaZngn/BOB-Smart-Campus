@@ -429,6 +429,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Social-Media-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BOB Campus";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "QR kod taramak için kamera izniniz isteniyor.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "QR kod taramak için kamera izniniz isteniyor.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -463,6 +464,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Social-Media-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BOB Campus";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "QR kod taramak için kamera izniniz isteniyor.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "QR kod taramak için kamera izniniz isteniyor.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
