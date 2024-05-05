@@ -44,7 +44,7 @@ struct SearchView: View {
             
             ScrollView {
                 ForEach(postsViewModel.posts.filter({ post in
-                    text.isEmpty ? true : post.name.localizedStandardContains(text)
+                    text.isEmpty ? true : post.postTitle.localizedStandardContains(text)
                 })) { post in
                     PostComponent(post: post)
                         .padding(.bottom)
