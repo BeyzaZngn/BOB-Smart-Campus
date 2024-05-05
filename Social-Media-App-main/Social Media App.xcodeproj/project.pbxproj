@@ -17,7 +17,8 @@
 		05544D352BE62E940018B0A8 /* AizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D342BE62E940018B0A8 /* AizView.swift */; };
 		799560142BE7743E00A2FE11 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799560132BE7743E00A2FE11 /* WalletView.swift */; };
 		799560172BE7931000A2FE11 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 799560162BE7931000A2FE11 /* CodeScanner */; };
-		79F8A88B2BE5A8FE00408487 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79F8A88A2BE5A8FE00408487 /* GoogleService-Info.plist */; };
+		799560192BE7A63000A2FE11 /* DolulukView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799560182BE7A63000A2FE11 /* DolulukView.swift */; };
+		7995601B2BE7AC2100A2FE11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7995601A2BE7AC2100A2FE11 /* GoogleService-Info.plist */; };
 		79F8A88D2BE5ABCB00408487 /* CommunitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */; };
 		FA14EB7429F450F800FA21B5 /* Social_Media_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14EB7329F450F800FA21B5 /* Social_Media_AppApp.swift */; };
 		FA14EB7629F450F800FA21B5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14EB7529F450F800FA21B5 /* MainView.swift */; };
@@ -53,7 +54,8 @@
 		05544D342BE62E940018B0A8 /* AizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AizView.swift; sourceTree = "<group>"; };
 		79955FA72BE648FD00A2FE11 /* Social-Media-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Social-Media-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		799560132BE7743E00A2FE11 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
-		79F8A88A2BE5A8FE00408487 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		799560182BE7A63000A2FE11 /* DolulukView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DolulukView.swift; sourceTree = "<group>"; };
+		7995601A2BE7AC2100A2FE11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesView.swift; sourceTree = "<group>"; };
 		FA14EB7029F450F800FA21B5 /* Social Media App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Media App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA14EB7329F450F800FA21B5 /* Social_Media_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social_Media_AppApp.swift; sourceTree = "<group>"; };
@@ -129,8 +131,8 @@
 			children = (
 				79955FA72BE648FD00A2FE11 /* Social-Media-App-Info.plist */,
 				05544D252BE5EED40018B0A8 /* Yazilar */,
-				79F8A88A2BE5A8FE00408487 /* GoogleService-Info.plist */,
 				FA14EB7329F450F800FA21B5 /* Social_Media_AppApp.swift */,
+				7995601A2BE7AC2100A2FE11 /* GoogleService-Info.plist */,
 				FA14EB8329F4511B00FA21B5 /* Models */,
 				FA14EB8229F4511000FA21B5 /* Utilities */,
 				FA14EB8129F4510700FA21B5 /* Views */,
@@ -159,6 +161,7 @@
 				FA3B2E0729F580A700D32885 /* SearchView.swift */,
 				79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */,
 				799560132BE7743E00A2FE11 /* WalletView.swift */,
+				799560182BE7A63000A2FE11 /* DolulukView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,7 +260,7 @@
 			files = (
 				FA14EB7B29F450FA00FA21B5 /* Preview Assets.xcassets in Resources */,
 				FA14EB7829F450FA00FA21B5 /* Assets.xcassets in Resources */,
-				79F8A88B2BE5A8FE00408487 /* GoogleService-Info.plist in Resources */,
+				7995601B2BE7AC2100A2FE11 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +286,7 @@
 				FA14EC0629F4CBDD00FA21B5 /* AddPostViewModel.swift in Sources */,
 				FA3B2E0829F580A700D32885 /* SearchView.swift in Sources */,
 				FA14EC0829F5576C00FA21B5 /* PostsViewModel.swift in Sources */,
+				799560192BE7A63000A2FE11 /* DolulukView.swift in Sources */,
 				05544D272BE5EEFA0018B0A8 /* BBTView.swift in Sources */,
 				05544D292BE5F4CD0018B0A8 /* SavunmaView.swift in Sources */,
 				FA14EBC229F4779B00FA21B5 /* FirebaseManager.swift in Sources */,
