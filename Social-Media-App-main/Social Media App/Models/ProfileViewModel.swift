@@ -1,10 +1,3 @@
-//
-//  ProfileViewModel.swift
-//  Social Media App
-//
-//  Created by alex on 4/23/23.
-//
-
 import Foundation
 import Firebase
 
