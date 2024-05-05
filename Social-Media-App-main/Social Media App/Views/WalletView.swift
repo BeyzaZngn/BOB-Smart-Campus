@@ -1,9 +1,21 @@
 import SwiftUI
 
 struct WalletView: View {
-    var balance: Double  = 255.90 // Sayaçtan alınan değeri tutacak değişken
+    var balance: Double = 255.90 // Sayaçtan alınan değeri tutacak değişken
     
     var body: some View {
+        VStack {
+            cardSection
+            HStack {
+                payButton
+                recycleToEarnButton
+            }
+        }
+    }
+}
+
+extension WalletView {
+    private var cardSection: some View {
         VStack {
             Spacer()
             Text("5234 5678 9345 3421")
@@ -42,6 +54,29 @@ struct WalletView: View {
         .cornerRadius(20)
         .shadow(radius: 5)
         .padding()
+    }
+    
+    private var payButton: some View {
+        Button {
+            
+        } label: {
+            Text("Ödeme Yap")
+                .font(.headline)
+                .frame(width: 110, height: 30)
+        }
+        .buttonStyle(.borderedProminent)
+    }
+    
+    private var recycleToEarnButton: some View {
+        Button {
+            
+        } label: {
+            Image(systemName: "arrow.3.trianglepath")
+            Text("Dönüştür ve Kazan")
+                .font(.headline)
+                .frame(width: .infinity, height: 30)
+        }
+        .buttonStyle(.borderedProminent)
     }
 }
 
