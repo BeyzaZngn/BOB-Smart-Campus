@@ -15,6 +15,7 @@
 		05544D312BE60C260018B0A8 /* FitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D302BE60C260018B0A8 /* FitView.swift */; };
 		05544D332BE62DA10018B0A8 /* fotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D322BE62DA10018B0A8 /* fotoView.swift */; };
 		05544D352BE62E940018B0A8 /* AizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544D342BE62E940018B0A8 /* AizView.swift */; };
+		799560142BE7743E00A2FE11 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799560132BE7743E00A2FE11 /* WalletView.swift */; };
 		79F8A88B2BE5A8FE00408487 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79F8A88A2BE5A8FE00408487 /* GoogleService-Info.plist */; };
 		79F8A88D2BE5ABCB00408487 /* CommunitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */; };
 		FA14EB7429F450F800FA21B5 /* Social_Media_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14EB7329F450F800FA21B5 /* Social_Media_AppApp.swift */; };
@@ -50,6 +51,7 @@
 		05544D322BE62DA10018B0A8 /* fotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fotoView.swift; sourceTree = "<group>"; };
 		05544D342BE62E940018B0A8 /* AizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AizView.swift; sourceTree = "<group>"; };
 		79955FA72BE648FD00A2FE11 /* Social-Media-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Social-Media-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		799560132BE7743E00A2FE11 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		79F8A88A2BE5A8FE00408487 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesView.swift; sourceTree = "<group>"; };
 		FA14EB7029F450F800FA21B5 /* Social Media App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Media App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +156,7 @@
 				FA14EC0329F4CBC300FA21B5 /* AddPostView.swift */,
 				FA3B2E0729F580A700D32885 /* SearchView.swift */,
 				79F8A88C2BE5ABCB00408487 /* CommunitiesView.swift */,
+				799560132BE7743E00A2FE11 /* WalletView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				79F8A88D2BE5ABCB00408487 /* CommunitiesView.swift in Sources */,
 				05544D2B2BE5F7F30018B0A8 /* KariyerView.swift in Sources */,
 				FA14EB7429F450F800FA21B5 /* Social_Media_AppApp.swift in Sources */,
+				799560142BE7743E00A2FE11 /* WalletView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

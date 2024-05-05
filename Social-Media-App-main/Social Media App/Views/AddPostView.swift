@@ -15,7 +15,7 @@ struct AddPostView: View {
     @State private var selectedImage: UIImage?
     @State private var isShowingImagePicker = false
     @State private var errorMessage = ""
-    @State private var selectedKategori = ""
+    @State private var selectedKategori = "Kayıp İlanı"
     
     let kategoriler = ["Kayıp İlanı", "Alım - Satım İlanı"]
     
