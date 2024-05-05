@@ -1,5 +1,5 @@
-import SwiftUI
 import CodeScanner
+import SwiftUI
 
 struct Transaction: Identifiable {
     var id = UUID()
@@ -22,8 +22,10 @@ struct WalletView: View {
                 recycleToEarnButton
             }
             
+            Text("İşlem Geçmişi")
+                .padding()
             List(transactions) { transaction in
-                Text("\(transaction.description): \(transaction.amount.formatted())")
+                Text("\(transaction.amount.formatted())")
             }
         }
     }
@@ -113,14 +115,15 @@ struct ScannerSheet: View {
     @Environment(\.presentationMode) var presentationMode
     @Binding var currentBalance: Double // Bu satırı ekleyin
 
-    
     var body: some View {
         CodeScannerView(codeTypes: [.qr], simulatedData: "Paul Hudson") { result in
             switch result {
             case .success(let scan):
                 if let scannedValue = Double(scan.string) {
-                    balance += scannedValue // QR kod okunan değeri bakiyeye ekle
-                    transactions.append(Transaction(amount: scannedValue, description: "QR kod okundu"))
+                    let amount = scannedValue
+                    balance += amount // QR kod okunan değeri bakiyeye ekle
+                    transactions.append(Transaction(amount: amount, description: "İşlem: "))
+                    currentBalance = balance // Güncel bakiyeyi currentBalance olarak ayarla
                 } else {
                     print("Hatalı QR kod.")
                 }
